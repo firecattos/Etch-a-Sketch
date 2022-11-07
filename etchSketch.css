@@ -1,14 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    background-color: #87CEFA;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
 .etchContainer{
+    background-color: white;
     display: grid;
     /*grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;*/
 
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 
     border-style: groove;
-    border-width: 5px;
+    border-width: 7px;
 }
 
-/*.etchContainer>div:hover{
-    background-color: black;
-}*/
+.title{
+    text-align: center;
+    font-size: 48px;
+    color: whitesmoke;
+    text-shadow: 5px 5px 3px whitesmoke;
+    margin-bottom: -5px;
+}
+
+.container{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls{
+    padding: 10px;
+    display: flex;
+}
+
+.controls>button{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    margin: 5px;
+}

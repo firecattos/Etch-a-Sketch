@@ -8,16 +8,12 @@ clear.addEventListener('click', clearGrid);
 let color=0; //0 for standard color, 1 for rainbow, 2 for darkening effect, 3 for eraser
 const rainbow=document.querySelector("#rainbow");
 rainbow.addEventListener('click', ()=>{
-    if(color===1){
-        color=0;
-    }
-    else color=1;
+    if(color===1) color=0;
+    else color=1
 });
 const darkening=document.querySelector("#rgdarken");
 darkening.addEventListener('click', ()=>{
-    if(color===2){
-        color=0;
-    }
+    if(color===2) color=0;
     else{
         color=2;
         const pixDarken=document.querySelectorAll("#pix");
@@ -28,9 +24,7 @@ darkening.addEventListener('click', ()=>{
 });
 const eraser=document.querySelector("#eraser");
 eraser.addEventListener('click', ()=>{
-    if(color===3){
-        color=0;
-    }
+    if(color===3) color=0;
     else color=3;
 });
 
