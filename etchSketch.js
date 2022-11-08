@@ -54,7 +54,7 @@ function newGrid(pixIn){
 
 //Random value function
 function coloRandom(){
-    return Math.round(Math.random() * 256);
+    return Math.round(Math.random() * 201); //Avoids lighter colors 
 }
 
 //Assemble rgb random function
@@ -116,9 +116,10 @@ function changeSize(){
 }
 
 function clearGrid(){ //Clears the grid from all pixels without deleting items
-    const gridCh=document.querySelectorAll("#pix");
-    gridCh.forEach((div)=>{
+    const gridChild=document.querySelectorAll("#pix");
+    gridChild.forEach((div)=>{
         div.style.backgroundColor="white";
+        if(color===2) div.dataset.dark=0;
     });
 }
 
