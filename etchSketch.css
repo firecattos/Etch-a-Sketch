@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body{
     background-color: #87CEFA;
-
     font-family: 'Press Start 2P', cursive;
 }
 
 .etchContainer{
     background-color: white;
     display: grid;
-    /*grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;*/
-
     width: 600px;
     height: 600px;
-
     border-style: groove;
     border-width: 7px;
 }
